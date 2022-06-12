@@ -12,7 +12,7 @@ $(document).ready(function (){
 
         console.log(fileSize)
         
-        let textToAdd = "File is " + fileSize + " kb,"
+        let textToAdd = "File is " + Math.round(fileSize) + " kb,"
         if (fileSize < 10){
             textToAdd += " which is ok"
         } else{
